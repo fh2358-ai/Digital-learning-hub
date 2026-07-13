@@ -1,25 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Education Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnHub Academy</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.3);
+position:fixed;
+width:100%;
+top:0;
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:17px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:58px;
+margin-bottom:20px;
+line-height:1.2;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+font-size:18px;
+color:#d1d5db;
+line-height:1.7;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+transform:translateY(-3px);
+}
+
+.hero-image{
+width:420px;
+height:420px;
+background:linear-gradient(135deg,#38bdf8,#2563eb);
+border-radius:30px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:150px;
+box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.features{
+padding:100px 8%;
+background:#111827;
+}
+
+.features h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1f2937;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#2563eb;
+}
+
+.card h3{
+margin-bottom:15px;
+font-size:24px;
+}
+
+.card p{
+color:#d1d5db;
+line-height:1.6;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#0f172a;
+color:#cbd5e1;
+}
+
+@media(max-width:900px){
+.hero{
+flex-direction:column;
+justify-content:center;
+text-align:center;
+padding-top:100px;
+}
+
+.hero-image{
+margin-top:40px;
+width:280px;
+height:280px;
+font-size:100px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+}
+</style>
+
 </head>
 <body>
 
-    <h1>Welcome to My Education Website</h1>
+<header>
+<div class="logo">LearnHub</div>
 
-    <p>Hello! I am your tutor. This website is created to help students learn easily.</p>
+<nav>
+<a href="#">Home</a>
+<a href="#">Courses</a>
+<a href="#">Notes</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+</header>
 
-    <h2>Subjects</h2>
-    <ul>
-        <li>English</li>
-        <li>Mathematics</li>
-        <li>Science</li>
-    </ul>
+<section class="hero">
 
-    <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
+<div class="hero-text">
+
+<h1>Learn <span>Smarter</span><br>Build Your Future</h1>
+
+<p>
+Welcome to LearnHub Academy. We provide quality learning resources,
+easy-to-understand lessons, assignments, quizzes, and guidance to help
+students succeed in their studies.
+</p>
+
+<a href="#" class="btn">Start Learning</a>
+
+</div>
+
+<div class="hero-image">
+📚
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Why Choose Us?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📖 Easy Notes</h3>
+<p>Well-organized notes that make learning simple and effective.</p>
+</div>
+
+<div class="card">
+<h3>🎥 Video Lessons</h3>
+<p>Interactive video lectures with practical examples.</p>
+</div>
+
+<div class="card">
+<h3>📝 Practice Tests</h3>
+<p>Improve your knowledge with quizzes and assignments.</p>
+</div>
+
+<div class="card">
+<h3>🏆 Expert Guidance</h3>
+<p>Learn directly from experienced teachers and tutors.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 LearnHub Academy | Empowering Students Through Education</p>
+
+</footer>
 
 </body>
 </html>
